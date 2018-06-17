@@ -4,7 +4,32 @@ import org.w3c.dom.ranges.RangeException;
 
 public class carta {
 	
+	
+	
+
 	private String Nombre;
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + Valor;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		carta other = (carta) obj;
+		if (Valor != other.Valor)
+			return false;
+		return true;
+	}
+
 	private String Palo;
 	private int Valor;
 	
