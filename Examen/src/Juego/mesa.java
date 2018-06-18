@@ -21,8 +21,8 @@ public class mesa {
 			Repartidor.DarCarta(pjugador);
 		}
 	}
-	public int DeterminarGanador(List<List<carta>> pmanos) {
-		int cercano=0;
+	public double DeterminarGanador(List<List<carta>> pmanos) {
+		double cercano=0;
 		for(List<carta> mano :pmanos) {
 		int valor=0;
 			for(carta carta :mano) {
@@ -33,6 +33,7 @@ public class mesa {
 			}
 			//
 		}
+		//
 	return cercano;
 	}
 
