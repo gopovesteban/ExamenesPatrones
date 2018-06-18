@@ -21,6 +21,19 @@ public class mesa {
 			Repartidor.DarCarta(pjugador);
 		}
 	}
+	
+	public  void EmpezarAJugarRon() {
+		for(jugador pjugador :jugadores) {
+			Repartidor.DarCarta(pjugador);
+			Repartidor.DarCarta(pjugador);
+			Repartidor.DarCarta(pjugador);
+			Repartidor.DarCarta(pjugador);
+			Repartidor.DarCarta(pjugador);
+			Repartidor.DarCarta(pjugador);
+			Repartidor.DarCarta(pjugador);
+			
+		}
+	}
 	public double DeterminarGanador(List<List<carta>> pmanos) {
 		double cercano=0;
 		for(List<carta> mano :pmanos) {
