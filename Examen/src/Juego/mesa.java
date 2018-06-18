@@ -14,6 +14,13 @@ public class mesa {
 		this.jugadores = null;
 		this.numeroJugadores=0;
 	}
+	
+	public  void EmpezarAJugar21() {
+		for(jugador pjugador :jugadores) {
+			Repartidor.DarCarta(pjugador);
+			Repartidor.DarCarta(pjugador);
+		}
+	}
 
 	public int getNumeroJugadores() {
 		return numeroJugadores;
@@ -29,6 +36,11 @@ public class mesa {
 
 	public void setJugadores(List<jugador> jugadores) {
 		this.jugadores = jugadores;
+	}
+
+	public  void addPlayers(List<jugador> pjugadores) {
+		this.jugadores =pjugadores;
+		
 	}
 	
 }

@@ -2,6 +2,7 @@ package JuegoPruebas;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
@@ -105,6 +106,27 @@ public class JuegoTest {
 			
 			mesa Mesa1 =new mesa(Repe);	
 			assertEquals(51,nuevoNaipe4.getLenght());
+			
+}
+		
+		@Test
+		public void testEmpezarPartida() throws Exception {
+			
+			
+			naipe nuevoNaipe4 = new naipe(4);
+			repartidor Repe = new repartidor(nuevoNaipe4);
+			
+			
+			jugador Jugador =new jugador("Esteban");
+			jugador Jugador2 =new jugador("Mario");
+			List<jugador> jugadores = new ArrayList<>();
+			Repe.DarCarta(Jugador);
+			jugadores.add(Jugador);
+			jugadores.add(Jugador2);
+			mesa Mesa1 =new mesa(Repe);
+			Mesa1.addPlayers(jugadores);
+			Mesa1.EmpezarAJugar21();
+			assertEquals(2,Jugador.getLenght());
 			
 }
 }

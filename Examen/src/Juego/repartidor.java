@@ -39,7 +39,7 @@ public class repartidor {
 		this.naipeCompleto = naipeCompleto;
 	}
 	
-	
+	//
 	
 	static List<carta> barajar(List<carta> pCartas)
 	  {

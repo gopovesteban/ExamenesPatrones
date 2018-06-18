@@ -19,6 +19,10 @@ public class jugador {
 		mano.add(pcarta);
 		
 	}
+	public int getLenght() {
+		int tamanno =mano.size();
+		return tamanno;
+	}
 	
 
 }
