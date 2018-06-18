@@ -47,9 +47,15 @@ public class mesa {
 			//
 		}
 		//
+		
+	
 	return cercano;
 	}
-
+	 public void Reset() {
+		 this.numeroJugadores = 0;
+		 this.jugadores.removeAll(jugadores);
+		 this.Repartidor= null;
+	 }
 	public int getNumeroJugadores() {
 		return numeroJugadores;
 	}
