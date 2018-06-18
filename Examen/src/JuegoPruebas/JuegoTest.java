@@ -60,26 +60,26 @@ public class JuegoTest {
 			
 		//}
 		
-		@Test
-		public void testJugadorCartas() throws Exception {
+		//@Test
+		//public void testJugadorCartas() throws Exception {
 			
 			
-			naipe nuevoNaipe3 = new naipe(3);
-			repartidor Repe = new repartidor(nuevoNaipe3);
-			List<List<carta>> masos =Repe.Repartir(nuevoNaipe3);
+			//naipe nuevoNaipe3 = new naipe(3);
+			//repartidor Repe = new repartidor(nuevoNaipe3);
+			//List<List<carta>> masos =Repe.Repartir(nuevoNaipe3);
 			
-			for(List<carta> maso : masos) {
-				jugador Jugador =new jugador("Esteban"+maso.size(),maso);
-			}
+			//for(List<carta> maso : masos) {
+			//	jugador Jugador =new jugador("Player"+maso.size());
+			//}
 			
 			
 			
 			
 		
 			
-			assertEquals(2,Repe.getLenght(nuevoNaipe3));
+			//assertEquals(2,Repe.getLenght(nuevoNaipe3));
 			
-		}
+		//}
 		
 		@Test
 		public void testMesa0() throws Exception {
@@ -90,5 +90,21 @@ public class JuegoTest {
 			
 			mesa Mesa1 =new mesa(Repe);	
 			assertEquals(0,Mesa1.getNumeroJugadores());
+}
+		
+		
+		@Test
+		public void testDarCartaJugador() throws Exception {
+			
+			
+			naipe nuevoNaipe4 = new naipe(4);
+			repartidor Repe = new repartidor(nuevoNaipe4);
+			List<carta> manoTemporal=null;
+			jugador Jugador =new jugador("Esteban");
+			Repe.DarCarta(Jugador);
+			
+			mesa Mesa1 =new mesa(Repe);	
+			assertEquals(51,nuevoNaipe4.getLenght());
+			
 }
 }

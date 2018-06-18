@@ -131,6 +131,11 @@ public class naipe {
 		
 		return CartasLenght;
 	}
+
+	public void eliminarCarta(carta pCarta) {
+		cartas.remove(pCarta);
+		
+	}
 	
 	
 	

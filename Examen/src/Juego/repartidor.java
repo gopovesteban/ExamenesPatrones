@@ -25,7 +25,14 @@ public class repartidor {
 		return masos;
 	
 	}
-	
+	public void DarCarta  (jugador pjugador) {
+		List<carta> cartas= naipeCompleto.getCartas();
+		
+		
+		carta Carta = cartas.get(cartas.size() - 1);
+		naipeCompleto.eliminarCarta(Carta);
+ 		
+	}
 
 	public repartidor(naipe naipeCompleto) {
 		super();
