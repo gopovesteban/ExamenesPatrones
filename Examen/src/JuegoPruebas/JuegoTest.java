@@ -2,12 +2,15 @@ package JuegoPruebas;
 
 import static org.junit.Assert.*;
 
+import java.util.List;
+
 import org.junit.Test;
 
 
 
 import Juego.carta;
 import Juego.naipe;
+import Juego.repartidor;
 
 public class JuegoTest {
 
@@ -32,7 +35,7 @@ public class JuegoTest {
 		}
 		
 		@Test
-		public void testTamañoNaipe() throws Exception {
+		public void testTamannoNaipe() throws Exception {
 			
 			
 			naipe nuevoNaipe = new naipe(1);
@@ -42,4 +45,16 @@ public class JuegoTest {
 			assertEquals(52,nuevoNaipe.getLenght());
 			
 		}
+		
+		//@Test
+		//public void testTamannoMano() throws Exception  {
+			
+			//naipe nuevoNaipe2 = new naipe(2);
+			//repartidor Repe = new repartidor(nuevoNaipe2);
+			
+		
+			
+			//assertEquals(4,Repe.getLenght(nuevoNaipe2));
+			
+		//}
 }

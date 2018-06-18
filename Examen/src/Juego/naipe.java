@@ -2,12 +2,13 @@ package Juego;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.List;
 
 public class naipe {
 	
 	
 	private int Id;
-	private ArrayList<carta> cartas;
+	private List<carta> cartas;
 	
 	public naipe(int id) throws Exception {
 		super();
@@ -115,17 +116,17 @@ public class naipe {
 		Id = id;
 	}
 
-	public ArrayList<carta> getCartas() {
+	public List<carta> getCartas() {
 		return cartas;
 	}
 
-	public void setCartas(ArrayList<carta> cartas) {
+	public void setCartas(List<carta> cartas) {
 		this.cartas = cartas;
 	}
 
 	public int getLenght() {
 		int CartasLenght;
-		ArrayList<carta> cartass=this.getCartas();
+		List<carta> cartass=this.getCartas();
 		CartasLenght=cartass.size();
 		
 		return CartasLenght;
