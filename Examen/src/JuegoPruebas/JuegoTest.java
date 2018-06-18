@@ -10,6 +10,7 @@ import org.junit.Test;
 
 import Juego.carta;
 import Juego.jugador;
+import Juego.mesa;
 import Juego.naipe;
 import Juego.repartidor;
 
@@ -79,4 +80,15 @@ public class JuegoTest {
 			assertEquals(2,Repe.getLenght(nuevoNaipe3));
 			
 		}
+		
+		@Test
+		public void testMesa0() throws Exception {
+			
+			
+			naipe nuevoNaipe3 = new naipe(3);
+			repartidor Repe = new repartidor(nuevoNaipe3);
+			
+			mesa Mesa1 =new mesa(Repe);	
+			assertEquals(0,Mesa1.getNumeroJugadores());
+}
 }
