@@ -8,6 +8,8 @@ public class carta {
 	
 
 	private String Nombre;
+	private String Palo;
+	private int Valor;
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -30,8 +32,7 @@ public class carta {
 		return true;
 	}
 
-	private String Palo;
-	private int Valor;
+	
 	
 	public carta(String nombre, String palo, int valor) throws Exception {
 		super();

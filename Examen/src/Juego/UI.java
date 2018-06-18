@@ -7,6 +7,7 @@ public class UI {
 	
 			carta nuevaCarta = new carta("2","palos",2);
 			System.out.println(nuevaCarta.getValor());
+			naipe naipeNuevo = new naipe(1);
 		
 		
 		
