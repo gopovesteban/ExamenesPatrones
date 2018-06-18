@@ -9,6 +9,7 @@ import org.junit.Test;
 
 
 import Juego.carta;
+import Juego.jugador;
 import Juego.naipe;
 import Juego.repartidor;
 
@@ -57,4 +58,25 @@ public class JuegoTest {
 			//assertEquals(4,Repe.getLenght(nuevoNaipe2));
 			
 		//}
+		
+		@Test
+		public void testJugadorCartas() throws Exception {
+			
+			
+			naipe nuevoNaipe3 = new naipe(3);
+			repartidor Repe = new repartidor(nuevoNaipe3);
+			List<List<carta>> masos =Repe.Repartir(nuevoNaipe3);
+			
+			for(List<carta> maso : masos) {
+				jugador Jugador =new jugador("Esteban"+maso.size(),maso);
+			}
+			
+			
+			
+			
+		
+			
+			assertEquals(2,Repe.getLenght(nuevoNaipe3));
+			
+		}
 }
