@@ -51,7 +51,15 @@ public class mesa {
 	
 	return cercano;
 	}
-	 public void Reset() {
+	 public repartidor getRepartidor() {
+		return Repartidor;
+	}
+
+	public void setRepartidor(repartidor repartidor) {
+		Repartidor = repartidor;
+	}
+
+	public void Reset() {
 		 this.numeroJugadores = 0;
 		 this.jugadores.removeAll(jugadores);
 		 this.Repartidor= null;
@@ -75,6 +83,10 @@ public class mesa {
 	public  void addPlayers(List<jugador> pjugadores) {
 		this.jugadores =pjugadores;
 		
+	}
+	public boolean isEmpty() {
+		boolean var =this.isEmpty();
+			return var;
 	}
 	
 }

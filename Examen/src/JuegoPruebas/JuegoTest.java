@@ -150,4 +150,27 @@ public class JuegoTest {
 			assertEquals(7,Jugador.getLenght());
 			
 }
+		
+		@Test
+		public void testReset() throws Exception {
+			
+			
+			naipe nuevoNaipe4 = new naipe(4);
+			repartidor Repe = new repartidor(nuevoNaipe4);
+			
+			
+			jugador Jugador =new jugador("Esteban");
+			jugador Jugador2 =new jugador("Mario");
+			List<jugador> jugadores = new ArrayList<>();
+			Repe.DarCarta(Jugador);
+			jugadores.add(Jugador);
+			jugadores.add(Jugador2);
+			mesa Mesa1 =new mesa(Repe);
+			Mesa1.addPlayers(jugadores);
+			Mesa1.EmpezarAJugarRon();
+			Mesa1.Reset();
+			assertEquals(null,Mesa1.getRepartidor());
+			//assertEquals(true,Mesa1.isEmpty());
+			
+}
 }
