@@ -21,6 +21,20 @@ public class mesa {
 			Repartidor.DarCarta(pjugador);
 		}
 	}
+	public int DeterminarGanador(List<List<carta>> pmanos) {
+		int cercano=0;
+		for(List<carta> mano :pmanos) {
+		int valor=0;
+			for(carta carta :mano) {
+				valor =valor+carta.getValor();
+			}
+			if(valor >18 && valor<=21) {
+				cercano = valor;
+			}
+			//
+		}
+	return cercano;
+	}
 
 	public int getNumeroJugadores() {
 		return numeroJugadores;
